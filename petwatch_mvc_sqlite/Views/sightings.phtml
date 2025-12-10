@@ -1,0 +1,59 @@
+<?php require __DIR__ . '/template/header.phtml'; ?>
+
+<h1><?= htmlspecialchars($view->pageTitle) ?></h1>
+
+<p><?= $view->dbMessage ?></p>
+
+<form method="GET">
+    <input type="text" name="search" placeholder="Search..." value="<?= htmlspecialchars($_GET['search'] ?? '') ?>">
+    <select name="type">
+        <option value="">All Types</option>
+        <?php foreach ($view->types as $t): ?>
+            <option value="<?= htmlspecialchars($t) ?>" <?= (($_GET['type'] ?? '') === $t) ? 'selected' : '' ?>><?= htmlspecialchars($t) ?></option>
+        <?php endforeach; ?>
+    </select>
+    <select name="status">
+        <option value="">All Statuses</option>
+        <?php foreach ($view->statuses as $s): ?>
+            <option value="<?= htmlspecialchars($s) ?>" <?= (($_GET['status'] ?? '') === $s) ? 'selected' : '' ?>><?= htmlspecialchars($s) ?></option>
+        <?php endforeach; ?>
+    </select>
+    <button type="submit">Filter</button>
+</form>
+
+<?php if (isset($_SESSION['user_id']) && $_SESSION['role'] === 'user'): ?>
+    <form method="POST">
+        <label>Pet ID:</label>
+        <input type="number" name="pet_id" required><br><br>
+
+        <label>Note:</label>
+        <textarea name="note"></textarea><br><br>
+
+        <label>Latitude (optional):</label>
+        <input type="text" name="latitude"><br><br>
+
+        <label>Longitude (optional):</label>
+        <input type="text" name="longitude"><br><br>
+
+        <button type="submit" name="add_sighting">Add Sighting</button>
+    </form>
+<?php elseif (isset($view->errorMessage)): ?>
+    <p style="color:red;"><?= htmlspecialchars($view->errorMessage) ?></p>
+<?php endif; ?>
+
+<div style="display:flex; flex-wrap:wrap; gap:16px; margin-top:20px;">
+    <?php foreach ($view->sightings as $s): ?>
+        <div style="border:1px solid #ccc; padding:12px; width:220px; border-radius:8px;">
+            <strong><?= htmlspecialchars($s['pet_name']) ?></strong><br>
+            Type: <?= htmlspecialchars($s['type']) ?><br>
+            Status: <?= htmlspecialchars($s['status']) ?><br>
+            User: <?= htmlspecialchars($s['username']) ?><br>
+            Note: <?= htmlspecialchars($s['note']) ?><br>
+            Latitude: <?= htmlspecialchars($s['latitude'] ?? '-') ?><br>
+            Longitude: <?= htmlspecialchars($s['longitude'] ?? '-') ?><br>
+            Created: <?= htmlspecialchars($s['created_at']) ?>
+        </div>
+    <?php endforeach; ?>
+</div>
+
+<?php require __DIR__ . '/template/footer.phtml'; ?>

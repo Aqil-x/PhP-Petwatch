@@ -1,0 +1,41 @@
+<?php require __DIR__ . '/template/header.phtml'; ?>
+
+<h1>My Pets</h1>
+
+<?php if (empty($pets)): ?>
+    <p>You have no pets listed.</p>
+<?php else: ?>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Status</th>
+            <th>Description</th>
+            <th>Change Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <?php foreach ($pets as $pet): ?>
+            <tr>
+                <td><?= htmlspecialchars($pet['name']) ?></td>
+                <td><?= htmlspecialchars($pet['type']) ?></td>
+                <td><?= htmlspecialchars($pet['status']) ?></td>
+                <td><?= htmlspecialchars($pet['description']) ?></td>
+                <td>
+                    <form method="POST" style="display:inline;">
+                        <input type="hidden" name="pet_id" value="<?= $pet['id'] ?>">
+                        <select name="status">
+                            <option value="Missing" <?= $pet['status'] === 'Missing' ? 'selected' : '' ?>>Missing</option>
+                            <option value="Found" <?= $pet['status'] === 'Found' ? 'selected' : '' ?>>Found</option>
+                        </select>
+                        <button type="submit" name="update_status">Update</button>
+                    </form>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+        </tbody>
+    </table>
+<?php endif; ?>
+
+<?php require __DIR__ . '/template/footer.phtml'; ?>

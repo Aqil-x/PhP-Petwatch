@@ -1,0 +1,32 @@
+<?php require __DIR__ . '/template/header.phtml'; ?>
+
+<h2 class="h4 mb-3">Register New Account</h2>
+
+<?php if (!empty($err)): ?>
+    <div class="alert alert-danger py-2"><?= htmlspecialchars($err) ?></div>
+<?php endif; ?>
+
+<form method="post" action="register.php" autocomplete="off">
+    <div class="mb-3">
+        <label class="form-label">Username</label>
+        <input class="form-control" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>">
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" required>
+        <div class="form-text">
+            Must be at least 12 characters, include uppercase, lowercase, number, and symbol.
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" name="password_confirm" required>
+    </div>
+
+    <button class="btn btn-success">Register</button>
+    <a class="btn btn-secondary" href="index.php">Cancel</a>
+</form>
+
+<?php require __DIR__ . '/template/footer.phtml'; ?>
