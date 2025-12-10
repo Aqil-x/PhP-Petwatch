@@ -22,7 +22,9 @@ Each listing and user are assigned unique IDs for easy reference.
 
 Technologies Used
 PhP (Core Language)
+HTML
 SQL
+css
 
 To run this you would need to run it under "localhost:8000"
 I created this using PhPStorm and was testing/running it using the built-in feature
