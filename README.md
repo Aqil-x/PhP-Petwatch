@@ -1,4 +1,4 @@
-# 🐾 PetWatch
+#  PetWatch
 
 A PHP-based web application for reporting and managing lost pets. PetWatch allows users to create accounts, report missing pets, browse existing reports, and record sightings to help reunite lost pets with their owners.
 
@@ -6,7 +6,7 @@ This project was developed as part of my university studies and was built using 
 
 ---
 
-## 📌 Overview
+## Overview
 
 PetWatch provides a centralised platform where users can report lost pets and manage their listings.
 
@@ -19,16 +19,16 @@ The project focuses on implementing a functional web application while applying 
 
 ---
 
-## ✨ Features
+## Features
 
-### 👤 User Accounts
+### User Accounts
 
 * User registration and login
 * Session-based authentication
 * Protected functionality for authenticated users
 * User-specific pet listings
 
-### 🐕 Pet Listings
+### Pet Listings
 
 * Create lost-pet reports
 * View available pet listings
@@ -36,13 +36,13 @@ The project focuses on implementing a functional web application while applying 
 * Delete listings
 * View pets associated with an owner
 
-### 📍 Sightings
+### Sightings
 
 * Record sightings of missing pets
 * Store sighting information in the database
 * Associate sightings with specific pets
 
-### 🗄️ Database
+### Database
 
 * SQLite database
 * Structured relational data
@@ -51,7 +51,7 @@ The project focuses on implementing a functional web application while applying 
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Technology   | Purpose                       |
 | ------------ | ----------------------------- |
@@ -64,7 +64,7 @@ The project focuses on implementing a functional web application while applying 
 
 ---
 
-## 🏗️ Project Architecture
+##  Project Architecture
 
 PetWatch follows the **Model-View-Controller (MVC)** pattern.
 
@@ -110,7 +110,7 @@ Using MVC helps separate the application's data, user interface and application 
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -183,7 +183,7 @@ in your browser.
 
 ---
 
-## 🔐 Authentication
+##  Authentication
 
 PetWatch includes user authentication for functionality that requires an account.
 
@@ -198,7 +198,7 @@ Visitors can still browse pet listings without creating an account.
 
 ---
 
-## 🗃️ Database Structure
+##  Database Structure
 
 The application uses SQLite to store persistent application data.
 
@@ -229,7 +229,7 @@ schema.sql
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 
 This project allowed me to develop practical experience with:
 
@@ -249,7 +249,7 @@ This project allowed me to develop practical experience with:
 
 ---
 
-## 🔧 Future Improvements
+##  Future Improvements
 
 Possible improvements to the project include:
 
@@ -267,7 +267,7 @@ Possible improvements to the project include:
 
 ---
 
-## 📚 Project Status
+##  Project Status
 
 This project is a university-developed application and represents my practical experience learning PHP and web application development.
 
@@ -284,7 +284,3 @@ Computer Science Undergraduate
 GitHub: [Aqil-x](https://github.com/Aqil-x)
 
 ---
-
-## 📄 License
-
-This project was created for educational purposes.
