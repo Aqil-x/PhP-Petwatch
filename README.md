@@ -275,7 +275,7 @@ The core functionality has been implemented, with further improvements possible 
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Aqil Ahmed**
 
