@@ -281,7 +281,7 @@ Home Page <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33"
 
 Browse Pets <img width="2554" height="754" alt="image" src="https://github.com/user-attachments/assets/7982744f-3401-4eaa-af5d-a36f83a089cb" />
 
-Login Page <img width="1" height="1" alt="image" src="https://github.com/user-attachments/assets/866113f3-d00e-4409-8983-bc1ec70174cd" />
+Login Page <img width="2524" height="896" alt="image" src="https://github.com/user-attachments/assets/5f913139-bcea-4c90-953d-097c8901fa8e" />
 
 Register User <img width="2546" height="730" alt="image" src="https://github.com/user-attachments/assets/e7c05c28-cedd-4d9d-96c0-de500d596193" />
 
