@@ -275,6 +275,11 @@ The core functionality has been implemented, with further improvements possible 
 
 ---
 
+Pages
+
+Home Page <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33" src="https://github.com/user-attachments/assets/e0f63473-7e66-4cb0-ad35-fcd2b3a0ec59" />
+
+
 ##  Author
 
 **Aqil Ahmed**
