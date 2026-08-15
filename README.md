@@ -279,13 +279,13 @@ Pages
 
 Home Page <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33" src="https://github.com/user-attachments/assets/e0f63473-7e66-4cb0-ad35-fcd2b3a0ec59" />
 
-Browse Pets <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33" src="https://github.com/user-attachments/assets/fbcf838b-3003-4dd7-84c1-ac35f3cd05f5" />
+Browse Pets <img width="2554" height="754" alt="image" src="https://github.com/user-attachments/assets/7982744f-3401-4eaa-af5d-a36f83a089cb" />
 
-Login Page <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33" src="https://github.com/user-attachments/assets/a6a6aa13-0a62-4dd5-b082-bceb1be88628" />
+Login Page <img width="1" height="1" alt="image" src="https://github.com/user-attachments/assets/866113f3-d00e-4409-8983-bc1ec70174cd" />
 
-Register User <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33" src="https://github.com/user-attachments/assets/f37de7ee-fb3e-4fc8-b94e-ee66ded6e4b7" />
+Register User <img width="2546" height="730" alt="image" src="https://github.com/user-attachments/assets/e7c05c28-cedd-4d9d-96c0-de500d596193" />
 
-Sightings <img width="1284" height="471" alt="Screenshot 2026-08-14 at 22 04 33" src="https://github.com/user-attachments/assets/4dcbafdb-dc6d-4d61-a273-631e37bf5361" />
+Sightings <img width="1286" height="928" alt="image" src="https://github.com/user-attachments/assets/0c555817-9627-4e1c-a392-cb425300765a" />
 
 ---
 
